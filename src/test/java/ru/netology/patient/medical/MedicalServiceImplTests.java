@@ -54,6 +54,7 @@ public class MedicalServiceImplTests {
     @ParameterizedTest
     @MethodSource("sourceBloodPressure")
     public void testCheckBloodPressure(int high, int low) {
+        //Thank you for the specified flaw!
         //arrange
         medicalService.checkBloodPressure("", new BloodPressure(high, low));
         //act
